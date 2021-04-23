@@ -1,3 +1,9 @@
+
+ ### git remote add origin https://github.com/wangphp2010/git_tutorial.git
+
+## git push -u origin master 推master分支到github
+## git push -u origin master -f  强制覆盖已有的分支
+
 # git_tutorial
 git_tutorial
 	ls 查看文件
