@@ -1,3 +1,5 @@
+# git_tutorial
+git_tutorial
 	ls 查看文件
 	ls -a 查看所有文件 包括隐藏的
 	touch 1.php  建立1.php 文件
@@ -13,7 +15,7 @@
 	git status -s 	查看状态 简单的
 	
 	git add 1.php  添加1.php到库 
-	git add . 	   添加所有文件到库
+	git add . 	   添加所有文件到库 
 	
 	git log 日志
 	git log --oneline 单行查看日志
@@ -64,21 +66,11 @@
 	
 ## 连接 github
 	git remote add origin https://github.com/yanick2019/git_tutorial.git
-
+	git pull origin master 上传github之前pull一下
 
 	git push -u origin master 推master分支到github
-    git push -u origin master -f  强制覆盖已有的分支
-    git push -u origin dev 推dev分支到github
+	git push -u origin dev 推dev分支到github
 	git push --force origin master 强推
-    
-    
-    
-    
-    
-## 如果有错误时 可以试试   
-	git pull origin master 上传github之前pull一下
-    
-	
 ## 查看连接
 	git remote -v show
 ## 断开链接
@@ -93,7 +85,9 @@ $ git fetch remotename
 $ git merge remotename/branchname
 # Merges updates made online with your local work	
 
-#git push -u origin master  出错时 [rejected] master -> master (fetch first) 	
+## 上传github.com
+
+  git push -u origin master  出错时 [rejected] master -> master (fetch first) 	
 	git fetch origin master:tmp
 	git rebase tmp
 	git push origin HEAD:master
@@ -102,3 +96,11 @@ $ git merge remotename/branchname
 Type q to exit this screen
 	
 	
+# github_page设置
+    ->Setting
+        ->pages
+            ->Source
+                ->None / Branch: Master
+                    -> Root( 会读取根目录index.html ) / Docs ( 会读取根目录下docs文件夹下的index.html )
+
+
